@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '31 1,7,13,19 * * *'
+    - cron: '1 0,6,12,18 * * *'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -14,15 +14,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          lfkby7113: ${{ secrets.lfkby7113 }}
+          fivv3: ${{ secrets.fivv3 }}
         run: |
-          printf '%s' "$lfkby7113" | jq -r .clqtq49123 | /bin/bash
-          echo $uxc2 | jq -r .k5 | /bin/bash
-          printf '%s' "$f327" | jq -r .khc360 | /bin/bash
+          printf '%s' "$fivv3" | jq -r .grz5530 | /bin/bash
+          printf '%s' "$qslv6" | jq -r .s861 | /bin/bash
+          printf '%s' "$aryhn68724" | jq -r .lm65 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: uKfLzOZb
+          name: DyGChH9J
           path: "*.zip"
           retention-days: 1
